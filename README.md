@@ -1,3 +1,3 @@
 # Suspect-Detection-w-YoloV8
 
-Will Be Updated!!
+## Project is still in progress, updates coming soon.
