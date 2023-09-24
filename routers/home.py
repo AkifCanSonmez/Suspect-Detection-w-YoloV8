@@ -23,10 +23,8 @@ router = APIRouter(
 )
 
 def get_session_id(request: Request):
-    # Kullanıcının oturumuyla ilişkilendirilmiş benzersiz bir kimlik (session_id) alın
     session_id = request.session.get("session_id")
     if session_id is None:
-        # Oturum kimliği yoksa veya tanımlanmamışsa, yeni bir oturum kimliği oluşturun
         session_id = str(uuid.uuid4())
         request.session["session_id"] = session_id
     return session_id
